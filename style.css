@@ -104,7 +104,6 @@ button:active:hover {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    content: url(/images/image-product-desktop.jpg);
   }
 }
 /* .attribution {
