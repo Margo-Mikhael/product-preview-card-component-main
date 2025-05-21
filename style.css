@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  font-family: "Fraunces", serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  max-width: 370px;
+}
+.card .image-section img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.card .details-section {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: hsl(212, 21%, 14%);
+}
+.card .details-section p {
+  font-family: "Montserrat";
+  color: hsl(228, 12%, 48%);
+  font-size: 0.9rem;
+  line-height: 20px;
+  font-weight: 500;
+}
+.card .details-section .category {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+.card .details-section .title {
+  line-height: 1.2;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+}
+.prices .final-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+.prices .old-price {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-size: 0.75rem;
+  margin-left: 20px;
+}
+
+button {
+  all: unset;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  padding: 15px;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+button:active:hover {
+  background-color: hsl(158, 42%, 18%);
+  transition: 0.3s;
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    max-width: 550px;
+  }
+  .card .details-section {
+    width: 50%;
+  }
+  .card .image-section {
+    width: 50%;
+  }
+  .card .image-section img {
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    content: url(/images/image-product-desktop.jpg);
+  }
+}
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} *//*# sourceMappingURL=style.css.map */
